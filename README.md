@@ -5,13 +5,13 @@
 Using Bower
 
 ```
-bower install angular-tealium
+bower install angular-tealium-otb
 ```
 
 Using NPM
 
 ```
-npm install https://github.com/Tealium/integration-angularjs
+npm install https://github.com/apercky/integration-angularjs
 ```
 
 ## Using the /sample app
@@ -52,10 +52,14 @@ Contributors
 
 - https://github.com/Tealium/integration-angularjs/graphs/contributors
 
+Added config.protocol property to default integration in order to handle the cordova version.
+In cordova the protocol was automatically set on file:// buy no file was laoded. 
+
 Providers have the advantage of being available in an application's config block, meaning tealium.js and tealium\_data.js do not need to be modified directly. For example:
 ```javascript
 app.config(function(tealiumProvider) {
   tealiumProvider.setConfig({
+    protocol: 'https',  // added to default integration in order to handle the cordova version 
     account: 'tealiummobile',
     profile: 'demo',
     environment: 'dev',
@@ -138,6 +142,7 @@ The example in script.js shows how to configure
 
 ```javascript
   tealiumProvider.setConfig({
+      protocol: 'http',
       account: 'myaccount',
       profile: 'myprofile',
       environment: 'prod',

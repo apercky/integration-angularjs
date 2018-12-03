@@ -1,5 +1,5 @@
 {
-  "name": "angular-tealium",
+  "name": "angular-tealium-otb",
   "description": "Tealium AngularJS Integration",
   "main": [
     "tealium_angular.js"
@@ -17,6 +17,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Tealium/integration-angularjs.git"
+    "url": "git://github.com/apercky/integration-angularjs.git"
   }
 }

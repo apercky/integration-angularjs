@@ -1,0 +1,1 @@
+bower register angular-tealium-otb git://github.com/apercky/integration-angularjs.git
